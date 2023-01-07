@@ -1,0 +1,111 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  /* padding: 0 2rem; */
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.conteiner{
+  padding: 0 2rem;
+}
+
+.img-header{
+  width: 100%;
+}
+
+.input-conteiner{
+  padding: 5px;
+}
+
+.ubication{
+  background: #062226;
+  border-radius: 1rem;
+  padding: 3px;
+}
+
+/* .App{
+  background: url(./assets/Rick&Morty.svg);
+} */
+
+input{
+  padding: 0.5rem;
+  width: 70%;
+}
+
+.button{
+  padding: 0.5rem;
+}
+
+.img-rnd{
+ width: 50%;
+}
+
+.residents{
+ display: flex;
+}
+
+.resident-card{
+ display: flex;
+ background: #062226;
+ padding: 1rem;
+ border-radius: 1rem;
+ align-items: center;
+ 
+}
+
+.resident-card img{
+  width: 50%;
+  height: 50%;
+  border-radius: 1rem;
+  
+  
+}
+
+.resident-card p{
+  margin: 0;
+  color: #7E7E7E;
+}
+
+
+.list-location{
+  list-style: none;
+  display: flex;
+  column-gap: 5rem;
+  justify-content: center;
+}
+
+.list-location li > p{
+  color: #7E7E7E;
+}
+
+
+
+.location{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  padding: 0 3rem;
+}
+
+@media (min-width: 500px) {
+  .location{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media (min-width: 765px) {
+  .location{
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+
+/* @media (min-width: 992px) {
+  .location{
+    grid-template-columns: repeat(4,1fr);
+  }
+} */
+
+
+
+
