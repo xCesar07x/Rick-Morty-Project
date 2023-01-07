@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
+import image from './assets/image.svg'
 import './App.css'
 import axios from 'axios'
 // import ResidentInfo from './ResidentInfo'
@@ -30,8 +30,8 @@ function App() {
     <div className="App">
       
       <header >
-        <img className='img-header' src="./src/assets/image.svg" alt="" />
-        {/* <img className='img-rnd' src="./src/assets/Rick&Morty.svg" alt="" />  */}
+        <img className='img-header' src={image} alt="" />
+    
       </header>
       
       
