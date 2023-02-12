@@ -6,98 +6,168 @@
   box-sizing: border-box;
 }
 
-.conteiner{
+.loading-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.rnm-img{
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  position: relative;
+  animation: load 2s infinite;
+}
+
+
+.conteiner {
   padding: 0 2rem;
 }
 
-.img-header{
-  width: 100%;
+.img-name {
+  margin-top: -20%;
+  width: 50%;
+  position: relative;
+  top: 22vw;
+  max-width: 50%;
+  z-index: 1024;
 }
 
-.input-conteiner{
+.header {
+  max-height: 20%;
+}
+
+.img-header {
+  width: 100%;
+  position: relative;
+  top: 0vw;
+}
+
+.input-conteiner {
   padding: 5px;
 }
 
-.ubication{
+.ubication {
   background: #062226;
   border-radius: 1rem;
   padding: 3px;
 }
 
-/* .App{
-  background: url(./assets/Rick&Morty.svg);
-} */
+.ubication p {
+  font-size: smaller;
+  color: gray;
+}
 
-input{
+input {
   padding: 0.5rem;
   width: 70%;
+  border-radius: 8px 0 0 8px;
 }
 
-.button{
+.button {
   padding: 0.5rem;
+  border-radius: 0 8px 8px 0;
 }
 
-.img-rnd{
- width: 50%;
-}
-
-.residents{
- display: flex;
-}
-
-.resident-card{
- display: flex;
- background: #062226;
- padding: 1rem;
- border-radius: 1rem;
- align-items: center;
- 
-}
-
-.resident-card img{
+.img-rnd {
   width: 50%;
-  height: 50%;
-  border-radius: 1rem;
-  
-  
 }
 
-.resident-card p{
+.residents {
+  display: flex;
+}
+
+.resident-info {
+  text-align: left;
+}
+
+.resident-card {
+  display: flex;
+  background: #062226;
+  padding: 1rem;
+  border-radius: 1rem;
+  align-items: center;
+  width: 90%;
+  height: 90%;
+}
+
+.resident-card:hover {
+  transform: scale(1.1, 1.1);
+  transition: .4s;
+}
+
+.resident-card img {
+  border-radius: 1rem;
+  max-width: 150px;
+}
+
+.status {
+  position: relative;
+  right: 155px;
+  background: #062226;
+  width: 90px;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  top: 40px;
+  font-size: medium;
+  border-radius: 0 10px 10px 0;
+  padding: 5px;
+}
+
+.resident-card p {
   margin: 0;
   color: #7E7E7E;
+  font-size: smaller;
 }
 
 
-.list-location{
+.list-location {
   list-style: none;
   display: flex;
   column-gap: 5rem;
   justify-content: center;
 }
 
-.list-location li > p{
+.list-location li>p {
   color: #7E7E7E;
 }
 
 
 
-.location{
+.location {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 20px;
+  gap: 35px;
   padding: 0 3rem;
 }
 
 @media (min-width: 500px) {
-  .location{
-    grid-template-columns: repeat(2,1fr);
+  .location {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 765px) {
-  .location{
-    grid-template-columns: repeat(3,1fr);
+  .location {
+    grid-template-columns: repeat(3, 1fr);
   }
+}
+
+@keyframes load {
+  0%{
+    top:0px;
+  }
+  50%{
+    top: -45px;
+  }
+  100%{
+    top: 0px;
+  } 
 }
 
 /* @media (min-width: 992px) {
@@ -105,7 +175,3 @@ input{
     grid-template-columns: repeat(4,1fr);
   }
 } */
-
-
-
-
